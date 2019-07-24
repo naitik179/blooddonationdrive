@@ -1,0 +1,143 @@
+*{
+	text-align:left;
+  font-family: sans-serif;
+  line-height: 28px;
+}
+
+ul{
+  text-decoration: none;
+  list-style-type:none;
+  color:#18dcff;
+  size:13px;
+  text-align: center;
+}
+
+body{
+  margin:10px 10px;
+  text-align:left;
+  box-sizing: border-box;
+  border:1px;
+}
+
+span{
+  color:#FF0000;
+  display: inline-block;
+}
+
+#tagline{
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    padding-top: 40px;
+    font-size: 35px;
+    color:black;
+}
+
+h1 {
+  margin-left: 10px;
+  padding: 1px 8px;
+}
+
+.nav-bar li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    padding: 20px 20px 20px 20px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.nav-bar {
+     background-color: #f91616;
+    font-size: 25px;
+    border-radius: 10px 10px;
+    margin: 2px 2px;
+	  width:100%;
+	  overflow:auto;
+    position: sticky;
+    top:0;
+    bottom:2px;
+	  margin-bottom:20px;
+     box-shadow: 0 10px 10px rgba(0,0,0,.5);
+
+}
+
+.nav-bar a {
+    color: floralwhite;
+    list-style-type: none;
+    text-decoration: none;
+    height: 20px;
+    width:20px;
+}
+
+.nav-bar li:hover{
+	background-color:#ff3838;
+  color:#FFffff;
+  transition-delay: 2ms;
+  transform-style: -50%;
+}
+
+.nav-bar li a:hover{
+  color:#18dcff;
+  transform:scale(1.3);
+}
+
+.content{
+    background-color: #dadfe1;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(241, 245, 245, 0.5);
+}
+
+#info{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: left;
+    padding: 30px;
+    background-color:#f2f1ef;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+
+img{
+    align-content: center;
+}
+.bottom-bar{
+    display: block;
+    margin: 10px 10px;
+    border: 2px solid #FFffff;
+    background-color: #2e3131;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+}
+.bottom-bar li{
+    display: inline;
+    color: #000000;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 19px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    padding: 17px;
+    padding-top: 22px;
+    border-right: 0.5px solid rgba(88, 88, 89,0.9);
+}
+.bottom-bar a{
+  color:floralwhite;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.bottom-bar li:hover{
+  background-color:#95a5a6;
+  color:black;
+}
+.bottom-bar i{
+  color:white;
+}
+
+i{
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: opx;
+}

@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylereg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Blood Donation</title>
+</head>
+<title>Register</title>
+
+<body background="background.jpg">
+
+    <img src="https://i.pinimg.com/originals/26/a1/6c/26a16cbe6c24539d6fec034e43716d2e.png" width="150px"
+        height="150px">
+    <h3 id="tagline">Find a <span>Donor</span> Now</h3>
+    <h1><span>BLOOD</span> DONATION</h1>
+
+    <div class="nav-bar">
+        <ul>
+
+            <li><i class="fas fa-home"></i></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-exclamation"></i><a href="whydonate.html">Why Donate</a></li>
+            <li><i class="fas fa-question"></i><a href="whocandonate.html">Who can Donate</a></li>
+            <li><i class="fas fa-search"></i></i><a href="#">Find a Donor</a></li>
+            <li><i class="material-icons">compare_arrows</i><a href="mythvsfact.html">Myth vs Facts</a href="#"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="info">
+
+            <form name="RegForm" action="" onsubmit="return formvalidate()" method="post">
+
+
+
+                <p>Name: <input type="text" size=65 name="Name"> </p><br>
+
+                <p> Zip code: <input type="text" size=65 name="ZipCode"> </p><br>
+
+                <p>E-mail Address: <input type="text" size=65 name="EMail"> </p><br>
+
+                <p>Password: <input type="password" size=65 name="Password"> </p><br>
+
+                <p> Confirm Password :<input type="password" size="65" name="password2"></p><br>
+
+                <p>Telephone: <input type="text" size=65 name="Telephone"> </p><br>
+
+
+
+                <p>SELECT YOUR CITY
+
+                    <select type="text" value="" name="Subject">
+
+                        <option>MUMBAI</option>
+
+                        <option>DELHI</option>
+
+                        <option>BANGLORE</option>
+
+                        <option>AHEMDABAD</option>
+
+                        <option>PUNE</option>
+
+                    </select></p><br><br>
+
+
+                <input type="radio" name="gender" value="male">Male<br>
+
+                <input type="radio" name="gender" value="female">Female<br><br>
+
+                Terms and Conditions: <input type="checkbox" name="terms"><br>
+
+                <p><input type="submit" value="send" name="Submit">
+
+                    <input type="reset" value="Reset" name="Reset">
+
+                </p>
+
+            </form>
+
+
+
+        </div>
+    </div>
+    <!--endo of content-->
+
+    <div class="bottom-bar">
+        <ul>
+            <li><i class="material-icons">phone</i><a href="contus.html">Contact Us</a></li>
+            <li><i class="material-icons">notes</i><a href="#">Terms and Condition</a></li>
+            <li><i class="material-icons">contact_support</i><a href="#">FAQ's</a></li>
+            <li><i class="material-icons">how_to_vote</i><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+    <!--end of bottom bar-->
+
+    <script>
+
+
+        function formvalidate() {
+
+           // var name = document.forms["RegForm"]["Name"];
+           var name=document.RegForm.Name;
+
+            var email = document.forms["RegForm"]["EMail"];
+
+            var phone = document.forms["RegForm"]["Telephone"];
+
+            var what = document.forms["RegForm"]["Subject"];
+
+            var password = document.forms["RegForm"]["Password"];
+
+            var pas2=document.forms["RegForm"]["password2"];
+
+            var zipcode = document.forms["RegForm"]["ZipCode"];
+
+            var gender = document.RegForm.gender;
+
+            var check_radio = 0;
+
+            var check_chbox = 0;
+
+            var terms = document.RegForm.terms;
+
+
+            if (terms.checked) {
+
+                check_chbox = 1;
+            }
+
+
+            if (check_chbox == 0) {
+
+                window.alert(`Kindly agree to the Terms and Conditions.`);
+
+                return false;
+
+            }
+
+
+
+            for (var i = 0; i < gender.length; i++) {
+
+                if (gender[i].checked) {
+
+                    check_radio = 1;
+
+                }
+
+            }
+
+            if (check_radio == 0) {
+
+                window.alert(`Please enter your gender.`);
+
+                return false;
+
+            }
+
+
+
+            if (name.value == "") {
+
+                window.alert(`Please enter your name.`);
+
+                name.focus();
+
+                return false;
+
+            }
+
+
+
+            if (zipcode.value == "") {
+
+                window.alert(`Please enter your zipcode.`);
+
+                name.focus();
+
+                return false;
+
+            }
+
+
+            if (zipcode.value.length < 6) {
+
+                window.alert(`Length of zip code should be 6 digits`);
+
+                zipcode.focus();
+
+                return false;
+
+            }
+
+
+
+            if (email.value == "") {
+
+                window.alert(`Please enter a valid e-mail address.`);
+
+                email.focus();
+
+                return false;
+
+            }
+
+
+
+            if (email.value.indexOf("@", 0) < 0) {
+
+                window.alert(`Please enter a valid e-mail address.`);
+
+                email.focus();
+
+                return false;
+
+            }
+
+
+
+            if (email.value.indexOf(".", 0) < 0) {
+
+                window.alert(`Please enter a valid e-mail address.`);
+
+                email.focus();
+
+                return false;
+
+            }
+
+
+
+            if (phone.value == "") {
+
+                window.alert(`Please enter your telephone number.`);
+
+                phone.focus();
+
+                return false;
+
+            }
+
+
+            if (phone.value.length != 10) {
+
+                window.alert(`Length of phone number should be 10 digits`);
+
+                password.focus();
+
+                return false;
+
+            }
+
+
+
+
+            if (password.value == "") {
+
+                window.alert(`Please enter your password`);
+
+                password.focus();
+
+                return false;
+
+            }
+
+
+            if (password.value.length != 4) {
+
+                window.alert(`Length of password should be 4 digits`);
+
+                password.focus();
+
+                return false;
+
+            }
+
+            if(password.value!=pas2.value)
+            {
+                window.alert("Password do not match");
+                pass2.focus();
+                return false;
+            }
+
+
+            if (what.selectedIndex < 1) {
+
+                alert(`Please enter your city.`);
+
+                what.focus();
+
+                return false;
+
+            }
+
+
+
+            return true;
+
+        }
+
+    </script>
+</body>
+
+</html>

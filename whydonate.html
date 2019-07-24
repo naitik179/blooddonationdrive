@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="whydonate.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Blood Donation</title>
+</head>
+
+<body background="background.jpg">
+    <div class="container">
+
+        <body>
+            <img src="https://i.pinimg.com/originals/26/a1/6c/26a16cbe6c24539d6fec034e43716d2e.png" width="150px"
+                height="150px">
+            <h3 id="tagline">Find a <span>Donor</span> Now</h3>
+            <h1><span>BLOOD</span> DONATION</h1>
+
+            <div class="nav-bar">
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+                    <li><i class="fas fa-exclamation"></i><a href="whydonate.html">Why Donate</a></li>
+                    <li><i class="fas fa-question"></i><a href="whocandonate.html">Who can Donate</a></li>
+                    <li><i class="fas fa-search"></i></i><a href="findadonor.html">Find a Donor</a></li>
+                    <li><i class="material-icons">compare_arrows</i><a href="mythvsfact.html">Myth vs Facts</a
+                            href="#"></a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <div id="info">
+                    <!--<div id="pics">
+                        <img src="wd1.jpg" width="1000px"><br>
+                        <img src="wd2.jpg" width="1000px"><br>
+                        <img src="wd3.jpg" width="1000px"><br>
+                        <img src="wd4.jpg" width="1000px"><br>
+                        <img src="wd5.jpg" width="1000px"><br>
+                        <img src="wd6.jpg" width="1000px"><br>-->
+
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                            
+                              <img src="wd1.jpg" style="width:100%" height="600px">
+
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              
+                              <img src="wd2.jpg" style="width:100%" height="600px">
+                              
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              
+                              <img src="wd3.jpg" style="width:100%" height="600px">
+                              
+                            </div>
+
+                            <div class="mySlides fade">
+                               
+                                <img src="wd4.jpg" style="width:100%" height="600px">
+                               
+                              </div>
+
+                              <div class="mySlides fade">
+                          
+                                <img src="wd5.jpg" style="width:100%" height="600px">
+                                
+                              </div>
+
+                              <div class="mySlides fade">
+                               
+                                <img src="wd6.jpg" style="width:100%" height="600px">
+                               
+                              </div>
+                          
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                          <br>
+                          
+                          <!-- The dots/circles -->
+                          <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            <span class="dot" onclick="currentSlide(4)"></span> 
+                            <span class="dot" onclick="currentSlide(5)"></span> 
+                            <span class="dot" onclick="currentSlide(6)"></span> 
+                          </div>
+
+                
+                    <hr>
+                    <br>
+                    <br>
+
+                    <div id="vid">
+                        <video id="ad" width="1000px" height="450px" controls>
+                            <source src="videoplayback.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="width:400px;">
+                            <button onclick="playPause()">Play/Pause</button>
+                            <button onclick="makeBig()">Big</button>
+                            <button onclick="makeSmall()">Small</button>
+                            <button onclick="makeNormal()">Normal</button>
+                        </div>
+                    </div>
+
+                   <p>
+                        India today faces a shortage of 10% relative to its blood requirements. In absolute terms, this means that we require to cover a shortfall of over 12 lakh units. Given that the eligible donor population of India is more than 512 million, this deficit is surprising.<br>
+                        <br>
+                        wareness about blood donation in India is sharply skewed. While some states, like Delhi are able to accumulate 233% extra blood than what is required, other needy states like Bihar face a deficit of as much as 85%. The cause for this wide difference in blood donation is primarily the lack of knowledge about its simple process in the lesser-developed states and the various unfounded myths that people have harboured over the centuries. On the whole, India today faces a shortage of 10% relative to its blood requirements. In absolute terms, this means that we require to cover a shortfall of over 12 lakh units. Given that the eligible donor population of India is more than 512 million, this deficit is surprising. But it also means that the shortage of blood supply can be covered within a day. If only we contribute.<br>
+                        <br>
+
+                        <span><b>The Need for Blood</b></span>
+                        <br>
+                        <p>
+                                With more than 1200 road crashes occurring every day in India, 60 million trauma induced surgeries are performed in the country every year. The 230 million major operations, 331 million cancer related procedures like chemotherapy and 10 million pregnancy complications all require blood transfusion. Besides this, patients being treated for sickle cell anemia, thalassemia and haemophilia require large quantities of blood daily.
+                                
+                                Another reason for the shortage of blood is the ban on payment to blood donors that was enacted in 1995. Previously almost one-third of the blood supply was from paid donors. But with the ban, both private and government hospitals have faced a larger shortage. However, difficult as it may be, this ban has also prevented unsafe blood donations where often people contaminated with communicable diseases appeared for paid donation frequently.</p>
+
+                   </p>
+                    <p>Blood cannot be manufactured in factories; it can only come from generous donors. To cater to
+                        this demand, with an unparalleled objective of solving the problem of blood shortage in India.
+                    </p>
+
+                    <p>According to WHO data, India faces a shortage of 3 million blood units. This shortage can easily
+                        be eliminated if only an additional 2% of India's youth donates blood. To make this possible,
+                        Blood Donation Drive acts as a channel connecting voluntary blood donors with those who need
+                        blood. It is a youth-run organization and provides free help and specially works to target the
+                        poor and the needy.</p>
+
+                    <ul style="list-style-type: disc;color: black;line-height: 28px;">
+                            <b>Every year our nation requires about 4 Crore units of blood, out of
+                            which only a meager 40 Lakh units of blood are available.</b>
+                            <br>
+                            <br>
+                            <li>The gift of blood is the gift of life. There is no substitute for human
+                            blood.</li>
+                            <li>Every two seconds someone needs blood.</li>
+                            <li>More than 38,000 blood donations are needed every day.</li>
+                            <li>A total of 30 million blood components are transfused each year.</li>
+                            <li>The average red blood cell transfusion is approximately 3 pints.</li>
+                            <li>The blood type most often requested by hospitals is Type O.</li>
+                            <li>Sickle cell patients can require frequent blood transfusions throughout
+                            their lives.</li>
+                            <li>More than 1 million new people are diagnosed with cancer each year.</li>
+                            <li>Many of them will need blood, sometimes daily, during their
+                            chemotherapy treatment.</li>
+                            <li>A single car accident victim can require as many as 100 units of blood</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="bottom-bar">
+                <ul>
+                    <li><i class="material-icons">phone</i><a href="contus.html">Contact Us</a></li>
+                    <li><i class="material-icons">notes</i><a href="t&c.html">Terms and Condition</a></li>
+                    <li><i class="material-icons">contact_support</i><a href="FAQ's.html">FAQ's</a></li>
+                    <li><i class="material-icons">feedback</i><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <script>
+
+
+                var myVideo = document.getElementById("ad");
+
+                function playPause() {
+                    if (myVideo.paused)
+                        myVideo.play();
+                    else
+                        myVideo.pause();
+                }
+
+                function makeBig() {
+                    myVideo.width = 1100;
+                    myVideo.height=600;
+                }
+
+                function makeSmall() {
+                    myVideo.width = 750;
+                    myVideo.height=400;
+                }
+
+                function makeNormal() {
+                    myVideo.width = 999;
+                    myVideo.height=450;
+                }
+
+
+                var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+            </script>
+
+        </body>
+    </div>
+
+</html>

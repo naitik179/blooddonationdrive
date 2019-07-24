@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xmldonor.xsl"?>
+
+<cat>
+
+<rat>
+<name>Mohit Saxena</name>
+<address>Green chowk,Delhi</address>
+<type>A+ve  </type>
+<freq>4</freq>
+<mob>947568214</mob>
+</rat>
+
+<rat>
+<name>Chandan Singh</name>
+<address>Rajwadi,Pune</address>
+<type>B+ve  </type>
+<freq>2</freq>
+<mob>954785632</mob>
+</rat>
+
+
+<rat>
+<name>Neeta R</name>
+<address>Borivali,Mumbai</address>
+<type>O+ve  </type>
+<freq>2</freq>
+<mob>963258741</mob>
+</rat>
+
+<rat>
+<name>Venkatesh Nayar</name>
+<address>Masinagudi,Chennai</address>
+<type>A+ve  </type>
+<freq>2</freq>
+<mob>975412364</mob>
+</rat>
+
+<rat>
+<name>Rohit Sharma</name>
+<address>Malad,Mumbai</address>
+<type>AO-e  </type>
+<freq>4</freq>
+<mob>987456321</mob>
+</rat>
+</cat>
