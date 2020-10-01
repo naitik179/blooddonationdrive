@@ -7,13 +7,11 @@ User-agent: googlebot-mobile
 Disallow: 
 User-agent: Slurp
 Disallow: 
-User-agent: yahoo-mmcrawler
-Disallow: 
 User-agent: yahoo-blogs/v3.9
 Disallow: 
 User-agent: *
-Disallow: 
-Crawl-delay: 10
+Disallow: /
+Crawl-delay: 5
 Disallow: /findadonor.html
 Disallow: /image3.jpg
 Sitemap: http://blooddonationdrive.herokuapp.com/sitemap.xml
